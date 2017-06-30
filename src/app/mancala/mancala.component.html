@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <td rowspan="2">{{ game.getCahcedSeeds(Player.SECOND) }}</td>
+    <td *ngFor="let seeds of game.getPlayersSeeds(Player.FIRST); let i = index"
+        (click)="game.move(0, i)"
+        [ngClass]="{currentPlayer: game.currentPlayer === Player.FIRST && seeds > 0}">{{seeds}}</td>
+    <td rowspan="2">{{ game.getCahcedSeeds(Player.FIRST) }}</td>
+  </tr>
+  <tr>
+    <td *ngFor="let seeds of game.getPlayersSeeds(Player.SECOND); let i = index"
+        (click)="game.move(1, i)"
+        [ngClass]="{currentPlayer: game.currentPlayer === Player.SECOND && seeds > 0}">{{seeds}}</td>
+  </tr>
+</table>

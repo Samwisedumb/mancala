@@ -1,0 +1,11 @@
+td.currentPlayer:hover {
+  background-color: #0000FF;
+  color: #FFFFFF;
+}
+
+td {
+  font-size: 400%;
+  font-family: Verdana, Geneva, sans-serif;
+  width: 1.5em;
+  text-align: center;
+}

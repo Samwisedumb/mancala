@@ -1,10 +1,1 @@
-<table>
-  <tr>
-    <td rowspan="2">{{board.mancalas[1]}}</td>
-    <td *ngFor="let seeds of board.holes[0]; let i = index" (click)="board.move(0, i)">{{seeds}}</td>
-    <td rowspan="2">{{board.mancalas[0]}}</td>
-  </tr>
-  <tr>
-    <td *ngFor="let seeds of board.holes[1]; let i = index" (click)="board.move(1, i)">{{seeds}}</td>
-  </tr>
-</table>
+<mancala></mancala>
